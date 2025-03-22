@@ -253,7 +253,7 @@ const toUp = () => {
             directiin = direction
         }else {
             direction = "up";
-            if (mudo != true) {
+            if (mudo == false) {
                 song.play();
             }
         }
@@ -268,7 +268,7 @@ const toDown = () => {
             directiin = direction
         }else {
             direction = "down";
-            if (mudo != true) {
+            if (mudo == false) {
                 song.play();
             }
         }
@@ -295,7 +295,7 @@ const toRight = () => {
             directiin = direction
         }else {
             direction = "right";
-            if (mudo != true) {
+            if (mudo == false) {
                 song.play();
             }
         }
