@@ -1,0 +1,54 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-content: centr;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 35vh;
+  background-color: #131313;
+  padding: 5px;
+  margin-top: 1px;
+}
+.footer_content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.controls {
+  background-color: black;
+}
+button {
+  border-radius: 5px;
+  padding: 15px;
+}
+button img {
+  width: 40px;
+}
+.black{
+  grid-area: black;
+  background-color: black;
+}
+#up {
+  grid-area: up;
+}
+#down {
+  grid-area: down;
+}
+#left {
+  grid-area: left;
+}
+#right {
+  grid-area: right;
+}
+.footer_content {
+  display: grid;
+  grid-template-areas: 
+  ". up ."
+  "left black right"
+  ". down .";
+  gap: 1rem 1rem;
+}
+footer p {
+  display: none;
+}

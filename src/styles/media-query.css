@@ -1,0 +1,33 @@
+/*para laptops*/
+@media screen and (min-width:769px) {
+  canvas, nav {
+    max-width: 600px;
+    max-height: 600px;
+  }
+  .levels {
+    width: 500px;
+  }
+  #snake-image {
+    width: 400px;
+  }
+  .levels button {
+    padding: 10px 15px;
+  }
+  button img {
+    width: 60px;
+  }
+  nav button {
+    padding: 40px;
+  }
+  .footer_content {
+    gap: 1rem 2rem;
+  }
+}
+@media screen and (min-width:1024px) {
+  footer button {
+    display: none;
+  }
+  footer p {
+    display: flex;
+  }
+}

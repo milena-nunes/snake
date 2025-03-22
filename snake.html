@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/game.css">
+    <link rel="stylesheet" href="./src/styles/controler.css">
+    <link rel="stylesheet" href="./src/styles/media-query.css">
+  </head>
+  <body>
+    <h2>Score: </h2>
+    <p id="score"></p>
+    <button id="config" class="btn">
+      <img src="./src/images/config.png">
+    </button>
+    <div id="aba">
+      <div class="aba-control">
+        <button id="closeBtn" class="btn">X</button>
+        <button class="audioBtn" id="btnAudio">
+          <img id="audio" src="./src/images/audio.png">
+        </button>
+        <button class="audioBtn" id="btnMudo">
+          <img id="mudo" src="./src/images/mudo.png">
+        </button>
+      </div>
+      <div class="colors">
+        <p>colors</p>
+        <button class="color" id="color1"></button>
+        <button class="color" id="color2"></button>
+        <button class="color" id="color3"></button>
+        <button class="color" id="color4"></button>
+        <button class="color" id="color5"></button>
+        <button class="color" id="color6"></button>
+      </div>
+    </div>
+    <div class="canvas-container">
+      <canvas width="600px" height="600px"></canvas>
+      <audio id="eat" src="./src/eat.m4a"></audio>
+      <audio id="gameOver" src="./src/game-over.mp3" ></audio>
+      <audio id="song" src="./src/fundo.m4a" autoplay ></audio>
+      <nav>
+        <img id="snake-image" src="./src/images/snake.png">
+        <p id="bestScore"></p>
+        <div class="levels">
+          <fieldset>
+            <input type="radio" name="select" id="easy">
+            <button>
+              <label for="easy">easy</label>
+            </button>
+          </fieldset>
+          <fieldset>
+            <input type="radio" name="select" id="medium">
+            <button>
+              <label for="medium">medium</label>
+            </button>
+          </fieldset>
+          <fieldset>
+            <input type="radio" name="select" id="hard">
+            <button>
+              <label for="hard">hard</label>
+            </button>
+          </fieldset>
+        </div>
+        <div class="aviso">
+          <button id="play">Play</button>
+        </div>
+      </nav>
+    </div>
+    <footer
+      <div class="footer_content">
+        <p>Use as setas do teclado para jogar</p>
+        <button id="up" class="controls">
+          <img src="./src/images/up-arrow.png">
+        </button>
+        <button id="left" class="controls">
+          <img src="./src/images/left-arrow.png">
+        </button>
+        <div class="black"></div>
+        <button id="right" class="controls">
+          <img src="./src/images/right-arrow.png">
+        </button>
+        <button id="down" class="controls">
+          <img src="./src/images/down-arrow.png">
+        </button>
+      </div>
+    </footer>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+    <script src="snake.js"></script>
+  </body>
+</html>
