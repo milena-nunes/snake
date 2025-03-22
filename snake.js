@@ -25,7 +25,7 @@ let arr = []
 let direction
 let interval;
 let color = "antiqueWhite"
-let mudo
+let mudo = false
 const size = 25;
 let snake
 let food = { x: 0, y: 0 };
@@ -361,6 +361,7 @@ btnMudo.addEventListener("click", () => {
     btnAudio.style.display = "flex"
     btnMudo.style.display = "none"
     song.play()
+    mudo = false;
 })
 color1.addEventListener("click", () => {
     color = "antiqueWhite";
@@ -403,5 +404,5 @@ setInterval(() => {
     }
     toEat();
     verify();
-}, 125)
+}, 130)
 sortear()
