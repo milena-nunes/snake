@@ -221,6 +221,7 @@ const verify = () => {
     })
 }
 const finishGame = () => {
+  snake = []
     song.pause()
     gameOver.play()
     nav.style.display = "flex";
